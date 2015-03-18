@@ -49,12 +49,21 @@ namespace ErlendsappMARS
         {
             String text_1 = textinput_1.Text;
             String text_2 = textinput_2.Text;
+            String text_3 = textinput_3.Text;
 
             int principle;
             int numberofyears;
 
+
             bool principle_b = int.TryParse(text_1, out principle);
             bool numberofyears_b = int.TryParse(text_2, out numberofyears);
+
+            if(principle_b && numberofyears_b)
+            {
+
+                double sum = 
+
+            }
 
 
         }

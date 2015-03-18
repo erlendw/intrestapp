@@ -11,9 +11,10 @@
     <Grid>
         <TextBox x:Name="textinput_1" HorizontalAlignment="Left" Margin="150,110,0,0" TextWrapping="Wrap" Text="Principle" VerticalAlignment="Top" GotFocus="gotFocus_clear" Width="108" TextChanged="textinput_1_TextChanged" LostFocus="LostFocus_reset"/>
         <TextBox x:Name="textinput_2" HorizontalAlignment="Left" Margin="150,160,0,0" TextWrapping="Wrap" Text="# of years" VerticalAlignment="Top" TextChanged="textinput_2_TextChanged" GotFocus="gotFocus_clear" Width="108" LostFocus="LostFocus_reset"/>
-        <Button x:Name="button_1" Content="Calculate" HorizontalAlignment="Left" Margin="150,210,0,0" VerticalAlignment="Top" Click="button_1_Click"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="400,523,-6,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="106"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="20,431,-71,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="141" Width="321"/>
+        <TextBox x:Name="textinput_2" HorizontalAlignment="Left" Margin="150,2100,0,0" TextWrapping="Wrap" Text="interest %" VerticalAlignment="Top" TextChanged="textinput_3_TextChanged" GotFocus="gotFocus_clear" Width="108" LostFocus="LostFocus_reset"/>
+        
+        <Button x:Name="button_1" Content="Calculate" HorizontalAlignment="Left" Margin="150,270,0,0" VerticalAlignment="Top" Click="button_1_Click"/>
+        
 
     </Grid>
 </Page>
