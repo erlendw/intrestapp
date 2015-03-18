@@ -9,12 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBox x:Name="textinput_1" HorizontalAlignment="Left" Margin="150,110,0,0" TextWrapping="Wrap" Text="Principle" VerticalAlignment="Top" GotFocus="gotFocus_clear" Width="108" TextChanged="textinput_1_TextChanged" LostFocus="LostFocus_reset"/>
-        <TextBox x:Name="textinput_2" HorizontalAlignment="Left" Margin="150,160,0,0" TextWrapping="Wrap" Text="# of years" VerticalAlignment="Top" TextChanged="textinput_2_TextChanged" GotFocus="gotFocus_clear" Width="108" LostFocus="LostFocus_reset"/>
-        <TextBox x:Name="textinput_2" HorizontalAlignment="Left" Margin="150,2100,0,0" TextWrapping="Wrap" Text="interest %" VerticalAlignment="Top" TextChanged="textinput_3_TextChanged" GotFocus="gotFocus_clear" Width="108" LostFocus="LostFocus_reset"/>
-        
+        <TextBox x:Name="textinput_1" HorizontalAlignment="Left" Margin="150,110,0,0" TextWrapping="Wrap" Text="Principle" VerticalAlignment="Top" GotFocus="gotFocus_clear" Width="108" TextChanged="textinput_1_TextChanged" LostFocus="LostFocus_reset" InputScope="Number"/>
+        <TextBox x:Name="textinput_2" HorizontalAlignment="Left" Margin="150,160,0,0" TextWrapping="Wrap" Text="# of years" VerticalAlignment="Top" TextChanged="textinput_2_TextChanged" GotFocus="gotFocus_clear" Width="108" LostFocus="LostFocus_reset" InputScope="Number"/>
+        <TextBox x:Name="textinput_3" HorizontalAlignment="Left" Margin="150,210,0,0" TextWrapping="Wrap" Text="% interest" VerticalAlignment="Top" Width="108" GotFocus="gotFocus_clear" LostFocus="LostFocus_reset" InputScope="Number"/>
+
         <Button x:Name="button_1" Content="Calculate" HorizontalAlignment="Left" Margin="150,270,0,0" VerticalAlignment="Top" Click="button_1_Click"/>
-        
+        <TextBox x:Name="useroutput" HorizontalAlignment="Left" Margin="28,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="192" Width="350" AcceptsReturn="True" FontSize="48" ToolTipService.ToolTip="&quot;&quot;"/>
 
     </Grid>
 </Page>

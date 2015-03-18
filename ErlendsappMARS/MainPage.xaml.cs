@@ -47,21 +47,24 @@ namespace ErlendsappMARS
 
         private void button_1_Click(object sender, RoutedEventArgs e)
         {
-            String text_1 = textinput_1.Text;
-            String text_2 = textinput_2.Text;
-            String text_3 = textinput_3.Text;
+            string text_1 = textinput_1.Text;
+            string text_2 = textinput_2.Text;
+            string text_3 = textinput_3.Text;
 
-            int principle;
-            int numberofyears;
+            double principle;
+            double numberofyears;
+            double interestpercentage;
 
+            bool principle_b = double.TryParse(text_1, out principle);
+            bool numberofyears_b = double.TryParse(text_2, out numberofyears);
+            bool interestpercentage_b = double.TryParse(text_3, out interestpercentage);
 
-            bool principle_b = int.TryParse(text_1, out principle);
-            bool numberofyears_b = int.TryParse(text_2, out numberofyears);
-
-            if(principle_b && numberofyears_b)
+            if (principle_b && numberofyears_b && interestpercentage_b)
             {
+                
 
-                double sum = 
+                useroutput.Text = Convert.ToString(principle*(Math.Pow(1+(interestpercentage/100), numberofyears)));
+                 
 
             }
 
@@ -86,6 +89,16 @@ namespace ErlendsappMARS
                 if (textinput_2.Text == "# of years")
                 {
                     textinput_2.Text = "";
+                }
+
+            }
+
+            if (sender == textinput_3)
+            {
+
+                if (textinput_3.Text == "% interest")
+                {
+                    textinput_3.Text = "";
                 }
 
             }
@@ -121,6 +134,21 @@ namespace ErlendsappMARS
                 {
 
                     textinput_2.Text = "# of years";
+
+                }
+
+            }
+
+            if (sender == textinput_3)
+            {
+
+                string test = textinput_3.Text;
+
+
+                if (string.IsNullOrEmpty(test))
+                {
+
+                    textinput_3.Text = "% interest";
 
                 }
 
