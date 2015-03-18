@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="ErlendsappMARS.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ErlendsappMARS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox x:Name="textinput_1" HorizontalAlignment="Left" Margin="150,110,0,0" TextWrapping="Wrap" Text="Principle" VerticalAlignment="Top" GotFocus="gotFocus_clear" Width="108" TextChanged="textinput_1_TextChanged" LostFocus="LostFocus_reset"/>
+        <TextBox x:Name="textinput_2" HorizontalAlignment="Left" Margin="150,160,0,0" TextWrapping="Wrap" Text="# of years" VerticalAlignment="Top" TextChanged="textinput_2_TextChanged" GotFocus="gotFocus_clear" Width="108" LostFocus="LostFocus_reset"/>
+        <Button x:Name="button_1" Content="Calculate" HorizontalAlignment="Left" Margin="150,210,0,0" VerticalAlignment="Top" Click="button_1_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="400,523,-6,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="106"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="20,431,-71,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="141" Width="321"/>
+
+    </Grid>
+</Page>
